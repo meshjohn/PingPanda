@@ -24,7 +24,7 @@ const Page = async ({ searchParams }: PageProps) => {
     where: { externalId: auth.id },
   })
   if (!user) {
-    redirect("/sign-up")
+    redirect("/welcome")
   }
   const intent = searchParams.intent
 
